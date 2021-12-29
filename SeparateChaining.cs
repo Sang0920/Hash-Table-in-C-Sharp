@@ -1,4 +1,4 @@
-﻿//Day la chuong trinh minh hoa cho bai tap lon (assignment) cua Nhom 6 - Bang bam bang phuong phap noi ket truc tiep
+//Day la chuong trinh minh hoa cho bai tap lon (assignment) cua Nhom 6 - Bang bam bang phuong phap noi ket truc tiep
 
 // See https://aka.ms/new-console-template for more information
 //Using .NET framework 6.0
@@ -223,7 +223,7 @@ namespace HashMap
             }
             Traverse(heads);
 
-            string[] Items = { "\n0. Thoat.",
+            string[] Items = { "\n\tOptions:\n0. Thoat.",
                 "1. Them mot sinh vien.",
                 "2. Xoa mot sinh vien.",
                 "3. Tim kiem thong tin mot sinh vien."};
@@ -265,7 +265,7 @@ namespace HashMap
                         }
                     case 3:
                         {
-                            Console.Write("\tNhap vao ma so sinh vien can tim kiem:");
+                            Console.Write("\tNhap vao ma so sinh vien can tim kiem: ");
                             int ID = Convert.ToInt32(Console.ReadLine());
                             if (Search(heads, ID) == null)
                             {
